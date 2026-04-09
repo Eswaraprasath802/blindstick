@@ -1,0 +1,2 @@
+"To stream the camera in pi"
+ffplay -fflags nobuffer -flags low_delay rtmp://localhost/live/testiot
