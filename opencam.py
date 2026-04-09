@@ -5,8 +5,15 @@ import time
 import math
 import collections
 import numpy as np
+from motiondection import detect
+from threading import Thread
 
-
+# ═══════════════════════════════════════════════════════════
+#  To call the rcwl-0516 sensor to detect the motion by thread
+# ═══════════════════════════════════════════════════════════
+dt=detect
+dt=Thread(target=dt.Threadmotiondetect)
+dt.start()
 # ═══════════════════════════════════════════════════════════
 #  CONFIG  —  only edit this section
 # ═══════════════════════════════════════════════════════════
